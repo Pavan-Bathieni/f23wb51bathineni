@@ -9,6 +9,9 @@ block content
    each value,index in results
     div(class="col-sm-2" onclick=`buy(${index})`)  Watch ID:#{value.WatchId} , price : #{value.Watch_Price}, Style: #{value.Watch_Style}
    script.
-
+    function buy(index)
+    {
+      alert(`Your purchased Item ${index}`)
+    }
   
 
